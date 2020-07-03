@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BarlowSemiCondensed-SemiBold.ttf">
+            <string>BarlowSemiCondensed-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Bottom Alert View Controller-->
+        <scene sceneID="lFA-85-Yjm">
+            <objects>
+                <viewController storyboardIdentifier="BottomAlertViewController" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0CA-An-mxd" customClass="BottomAlertViewController" customModule="WeatherChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K4I-0e-z7u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLj-LP-6rq" userLabel="Alert Content Container View">
+                                <rect key="frame" x="16" y="30" width="343" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="l2u-zz-TPS">
+                                        <rect key="frame" x="16" y="0.0" width="311" height="70"/>
+                                        <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
+                                        <fontDescription key="fontDescription" name="BarlowSemiCondensed-SemiBold" family="Barlow Semi Condensed" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="l2u-zz-TPS" firstAttribute="centerY" secondItem="qLj-LP-6rq" secondAttribute="centerY" id="1KO-V0-AZO"/>
+                                    <constraint firstAttribute="trailing" secondItem="l2u-zz-TPS" secondAttribute="trailing" constant="16" id="2Sf-w9-d4x"/>
+                                    <constraint firstItem="l2u-zz-TPS" firstAttribute="leading" secondItem="qLj-LP-6rq" secondAttribute="leading" constant="16" id="6cB-OC-nRh"/>
+                                    <constraint firstItem="l2u-zz-TPS" firstAttribute="top" secondItem="qLj-LP-6rq" secondAttribute="top" id="Qkv-ha-bRc"/>
+                                    <constraint firstAttribute="height" constant="70" id="p0s-UA-PRU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qLj-LP-6rq" firstAttribute="top" secondItem="tgk-vz-gfw" secondAttribute="top" constant="30" id="51D-U9-u99"/>
+                            <constraint firstItem="qLj-LP-6rq" firstAttribute="leading" secondItem="tgk-vz-gfw" secondAttribute="leading" constant="16" id="Rbu-OD-MUB"/>
+                            <constraint firstItem="qLj-LP-6rq" firstAttribute="trailing" secondItem="tgk-vz-gfw" secondAttribute="trailing" constant="-16" id="kYu-1H-pSm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tgk-vz-gfw"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="alertView" destination="qLj-LP-6rq" id="z2z-TX-JYR"/>
+                        <outlet property="textLabel" destination="l2u-zz-TPS" id="4yP-B2-Yds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="heT-1l-fjl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748.55072463768124" y="25.78125"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>googleMapsApiKey</key>
+	<string>AIzaSyAA4I5_VKloT2SrpBRC3bG32kubNOJQhlI</string>
+	<key>googleDirectionsApiKey</key>
+	<string>AIzaSyBJu55Z5QmL2MHaxl4yYulnRrR8RRxLODA</string>
+	<key>weather</key>
+	<string>https://weatherbit-v1-mashape.p.rapidapi.com/current?lang=en&amp;lon={longitude}&amp;lat={latitude}</string>
+</dict>
+</plist>
